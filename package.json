@@ -1,0 +1,22 @@
+{
+  "name": "felijs",
+  "version": "1.0.0",
+  "description": "hi",
+  "type": "module",
+  "main": "out/main.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "test": "tsc && node out/main.js"
+  },
+  "keywords": [],
+  "author": "Nyak0",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "oceanic.js": "^1.5.1"
+  }
+}
