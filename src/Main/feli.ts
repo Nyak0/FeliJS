@@ -1,6 +1,6 @@
 import Bot from "../Utils/structs/Bot.js";
 
-const client = new Bot({ 
+export const feli = new Bot({ 
     auth: "Bot " + process.env['BOT_TOKEN'],
     gateway: {
         intents: ["GUILDS", "GUILD_MESSAGES", "MESSAGE_CONTENT"]
@@ -8,8 +8,4 @@ const client = new Bot({
     prefixes:["feli", "testing"]
 });
 
-client.start()
-
-client.on("ready", async() => {
-    console.log("I am ", client.user.tag);
-});
+feli.start()
